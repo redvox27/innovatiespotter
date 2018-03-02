@@ -23,7 +23,7 @@ class Scraper:
 
         self.fill_url_dict()
         #self.iteration_range = len(self.url_dict)
-        self.iteration_range = 1
+        self.iteration_range = 3
     '''
     fill_url_dict() vult de url_dict variabel met de urls voor de resultaten per sector
     '''
@@ -31,7 +31,7 @@ class Scraper:
 
         for key in self.sector_dictionary.keys():
             self.key_list.append(key)
-            self.url_dict[key] = 'https://www.rvo.nl/subsidies-regelingen/projecten?f%5B0%5D=sectoren%' + self.sector_dictionary[key] + "&page="
+            self.url_dict[key] = 'https://www.rvo.nl/subsidies-regelingen/projecten?f%5B0%5D=subsidies%' + self.sector_dictionary[key] + "&page="
 
     '''
     get_href_per_sector() krijgt alle href's per resultatenpagina van een sector
@@ -185,12 +185,12 @@ class Scraper:
                 content_view_string = self.content_view_to_string(content_view)
 
                 main_page_text = soup.find('div', {'class': 'content'}).text
-                print(main_page_text)
+                #print(main_page_text)
                 print('\n')
                 rijksbijdrage = self.get_rijksbijdrage(content_view)
                 location = self.get_location(soup)
                 content_view_list = content_view_string.split('>')
-
+                print(rijksbijdrage)
                 # if self.is_status_present(content_view_list): #lenght content_view_list = 17
                 #     print('\033[93m' + 'status in link: ' + href)
                 #     print(content_view_list)

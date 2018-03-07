@@ -191,55 +191,55 @@ class Scraper:
                 location = self.get_location(soup)
                 content_view_list = content_view_string.split('>')
                 print(rijksbijdrage)
-                # if self.is_status_present(content_view_list): #lenght content_view_list = 17
-                #     print('\033[93m' + 'status in link: ' + href)
-                #     print(content_view_list)
-                #     status_header = 'status'
-                #     status_data = content_view_list[7]
-                #     print('status_header: ' + status_header)
-                #     print('status_data: ' + status_data)
-                #
-                #     jaar_header = 'jaar'
-                #     jaar_data = content_view_list[9]
-                #     print('jaarheader: ' + jaar_header)
-                #     print('jaar_data: ' + jaar_data)
-                #
-                #     project_nummer_header = 'projectnummer'
-                #     project_nummer_data = content_view_list[11]
-                #     print('project_nummer_header: ' + project_nummer_header)
-                #     print('project_nummmer_data: ' + project_nummer_data)
-                #
-                #     aanvrager_header = 'aanvrager'
-                #     aanvrager_data = content_view_list[13]
-                #     print('aanvrager_header: ' + aanvrager_header)
-                #     print('aanvrager_data: ' + aanvrager_data)
-                #
-                #     project_partner_header = 'projectpartner'
-                #     project_partner_data = content_view_list[15]
-                #     print('projectpartner_header: ' + project_partner_header)
-                #     print('projectpartner data: ' + project_partner_data)
-                # else: #length content_view_list = 15
-                #     print('\033[94m' + href)
-                #
-                #     jaar_header = 'jaar'
-                #     jaar_data = content_view_list[7]
-                #     print('jaarheader: ' + jaar_header)
-                #     print('jaar_data: ' + jaar_data)
-                #
-                #     project_nummer_header = 'projectnummer'
-                #     project_nummer_data = content_view_list[9]
-                #     print('project_nummer_header: ' + project_nummer_header)
-                #     print('project_nummmer_data: ' + project_nummer_data)
-                #
-                #     aanvrager_header = 'aanvrager'
-                #     aanvrager_data = content_view_list[11]
-                #     print('aanvrager_header: ' + aanvrager_header)
-                #     print('aanvrager_data: ' + aanvrager_data)
-                #
-                #     project_partner_header = 'projectpartner'
-                #     project_partner_data = content_view_list[13]
-                #     print('projectpartner_header: ' + project_partner_header)
-                #     print('projectpartner data: ' + project_partner_data)
+                if self.is_status_present(content_view_list): #lenght content_view_list = 17
+                    print('\033[93m' + 'status in link: ' + href)
+                    print(content_view_list)
+                    status_header = 'status'
+                    status_data = content_view_list[7]
+                    print('status_header: ' + status_header)
+                    print('status_data: ' + status_data)
+
+                    jaar_header = 'jaar'
+                    jaar_data = content_view_list[9]
+                    print('jaarheader: ' + jaar_header)
+                    print('jaar_data: ' + jaar_data)
+
+                    project_nummer_header = 'projectnummer'
+                    project_nummer_data = content_view_list[11]
+                    print('project_nummer_header: ' + project_nummer_header)
+                    print('project_nummmer_data: ' + project_nummer_data)
+
+                    aanvrager_header = 'aanvrager'
+                    aanvrager_data = content_view_list[13]
+                    print('aanvrager_header: ' + aanvrager_header)
+                    print('aanvrager_data: ' + aanvrager_data)
+
+                    project_partner_header = 'projectpartner'
+                    project_partner_data = content_view_list[15]
+                    print('projectpartner_header: ' + project_partner_header)
+                    print('projectpartner data: ' + project_partner_data)
+                else: #length content_view_list = 15
+                    print('\033[94m' + href)
+
+                    jaar_header = 'jaar'
+                    jaar_data = content_view_list[7]
+                    print('jaarheader: ' + jaar_header)
+                    print('jaar_data: ' + jaar_data)
+
+                    project_nummer_header = 'projectnummer'
+                    project_nummer_data = content_view_list[9]
+                    print('project_nummer_header: ' + project_nummer_header)
+                    print('project_nummmer_data: ' + project_nummer_data)
+
+                    aanvrager_header = 'aanvrager'
+                    aanvrager_data = content_view_list[11]
+                    print('aanvrager_header: ' + aanvrager_header)
+                    print('aanvrager_data: ' + aanvrager_data)
+
+                    project_partner_header = 'projectpartner'
+                    project_partner_data = content_view_list[13]
+                    print('projectpartner_header: ' + project_partner_header)
+                    print('projectpartner data: ' + project_partner_data)
 s = Scraper()
 s.spider()
 

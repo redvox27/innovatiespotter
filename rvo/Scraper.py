@@ -22,8 +22,8 @@ class Scraper:
         }
 
         self.fill_url_dict()
-        #self.iteration_range = len(self.url_dict)
-        self.iteration_range = 3
+        self.iteration_range = len(self.url_dict)
+        #self.iteration_range = 3
     '''
     fill_url_dict() vult de url_dict variabel met de urls voor de resultaten per sector
     '''
@@ -39,8 +39,7 @@ class Scraper:
     '''
     def get_href_per_sector(self):
         for i in range(0, self.iteration_range):
-            key_index = i
-            key = self.key_list[key_index]
+            key = self.key_list[i]
             print("key", key)
             amount_of_pages = self.determine_page_numbers(key)
             href_list = []
@@ -65,7 +64,8 @@ class Scraper:
                     if "https" in href and "projecten" in href:
                         href_list.append(href)
                         self.href_dict[key] = href_list
-
+            print('end section')
+            print('\n')
     """
     fill_href_dict is een helper methode voor get_href_per_sector
     deze methode maakt een url aan de hand van de index en key dat is opgegeven in de methode van get_href_per_sector.
@@ -98,13 +98,19 @@ class Scraper:
 
         try:
             amount_of_results = soup.find("div", attrs={"id": "result-meta"})
-            result_text = amount_of_results.text
-            result_list = result_text.split(' ')
 
-            return int(result_list[0])
+            if amount_of_results:
 
+                result_text = amount_of_results.text
+                result_text = result_text.replace('.', '')
+                result_list = result_text.split(' ')
+
+                return int(result_list[0])
+
+            else:
+                return None
         except Exception as e:
-            print(e)
+            print('Exception found: ' + e)
     '''
     determine_page_numbers bepaald het aantal pagina's voor een zoekresultaat per sector.
     voorbeeld: https://www.rvo.nl/subsidies-regelingen/projecten?f%5B0%5D=sectoren%3A5579 heeft drie pagina's aan zoek resultaten
@@ -204,6 +210,11 @@ class Scraper:
                 print(rijksbijdrage)
                 project_dict = {}
 
+                project_dict['Location'] = location
+
+                #TODO main text toevoegen aan dict
+                #TODO location toevoegen aan dict
+
                 if self.is_status_present(content_view_list): #lenght content_view_list = 17
                     print('\033[93m' + 'status in link: ' + href)
                     print(content_view_list)
@@ -300,5 +311,7 @@ class Scraper:
                 self.project_dict_list.append(project_dict)
                 print(project_dict)
 s = Scraper()
-s.spider()
-s.write_to_csv()
+s.get_href_per_sector()
+print(s.href_dict.keys())
+#s.spider()
+#s.write_to_csv()

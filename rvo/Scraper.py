@@ -2,12 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 from rvo.Helper import Helper
-
+import time
+from rvo.testHelper import TestHelper
 
 class Scraper:
 
     def __init__(self):
-        self.helper = Helper()
+        self.helper = TestHelper()
         self.sector_dictionary = self.helper.get_dictionary()
         #in de url_dict zitten alle url's van de resultaten vd sectoren. Dit wordt gebruikt om de aantal pagina's per pagina te bepalen voor de sector
         self.url_dict = {}
@@ -50,6 +51,7 @@ class Scraper:
 
                 for i in range(0, amount_of_pages):
                     self.fill_href_dict(key=key, index=i, href_list=href_list)
+                    time.sleep(1)
             else:
                 url = self.url_dict[key]
                 print('no pages found, key is: ', key)
@@ -64,6 +66,7 @@ class Scraper:
                     if "https" in href and "projecten" in href:
                         href_list.append(href)
                         self.href_dict[key] = href_list
+
             print('end section')
             print('\n')
     """
@@ -75,7 +78,7 @@ class Scraper:
         url = self.url_dict[key] + str(index)
         print(url)
         req = requests.get(url, self.headers)
-        if req is not None:
+        if req:
             plain_text = req.text
             soup = BeautifulSoup(plain_text)
 
@@ -85,8 +88,7 @@ class Scraper:
                 if "https" in href and "projecten" in href:
                     href_list.append(href)
                     self.href_dict[key] = href_list
-
-    ''' 
+    '''
     determine_amount_of_results() bepaald het aantal zoek resultaten per sector.
     dit is een helper methode voor determine_page_numbers. 
     '''
@@ -110,7 +112,7 @@ class Scraper:
             else:
                 return None
         except Exception as e:
-            print('Exception found: ' + e)
+            print('Exception found: ' + str(e))
     '''
     determine_page_numbers bepaald het aantal pagina's voor een zoekresultaat per sector.
     voorbeeld: https://www.rvo.nl/subsidies-regelingen/projecten?f%5B0%5D=sectoren%3A5579 heeft drie pagina's aan zoek resultaten
@@ -141,12 +143,17 @@ class Scraper:
                 page_counter = int(split_href[1])
             return page_counter + 1
 
-    def scrape_content_view(self, soup):
+    def scrape_content_view(self, soup, href):
         layout_main_column = soup.find('aside', attrs={'id': 'row1-col-asides'})
+        try:
+            content_view = layout_main_column.find('div', attrs={'view-content'})
 
-        content_view = layout_main_column.find('div', attrs={'view-content'})
+            return content_view
 
-        return content_view
+        except Exception as e:
+            print(e)
+            print('href with error: ' + str(href))
+            return None
 
     def get_rijksbijdrage(self, content_view):
         rijksbijdrage_tag = content_view.find('span', attrs={'class': 'rijksbijdrage'})
@@ -198,120 +205,124 @@ class Scraper:
                 plain_text = req.text
                 soup = BeautifulSoup(plain_text)
 
-                content_view = self.scrape_content_view(soup)
-                content_view_string = self.content_view_to_string(content_view)
+                content_view = self.scrape_content_view(soup, href)
+                if content_view:
+                    content_view_string = self.content_view_to_string(content_view)
 
-                main_page_text = soup.find('div', {'class': 'content'}).text
-                #print(main_page_text)
-                print('\n')
-                rijksbijdrage = self.get_rijksbijdrage(content_view)
-                location = self.get_location(soup)
-                content_view_list = content_view_string.split('>')
-                print(rijksbijdrage)
-                project_dict = {}
+                    main_page_text = soup.find('div', {'class': 'content'}).text
+                    #print(main_page_text)
+                    print('\n')
+                    rijksbijdrage = self.get_rijksbijdrage(content_view)
+                    location = self.get_location(soup)
+                    content_view_list = content_view_string.split('>')
+                    print(rijksbijdrage)
+                    project_dict = {}
 
-                project_dict['Location'] = location
+                    project_dict['Location'] = location
 
-                #TODO main text toevoegen aan dict
-                #TODO location toevoegen aan dict
+                    #TODO main text toevoegen aan dict
+                    #TODO location toevoegen aan dict
+                    #TODO key toevoegen aan dict
 
-                if self.is_status_present(content_view_list): #lenght content_view_list = 17
-                    print('\033[93m' + 'status in link: ' + href)
-                    print(content_view_list)
-                    status_header = 'status'
-                    status_data = content_view_list[7]
-                    status_data = status_data.replace(' ', '')
-                    status_data = status_data.replace('\n', '')
-                    status_data = status_data.replace('<h4', '')
-                    project_dict[status_header] = status_data
-                    print('status_header: ' + status_header)
-                    print('status_data: ' + status_data)
 
-                    jaar_header = 'jaar'
-                    jaar_data = content_view_list[9]
-                    jaar_data = jaar_data.replace(' ', '')
-                    jaar_data = jaar_data.replace('\n', '')
-                    jaar_data = jaar_data.replace('<h4', '')
-                    project_dict[jaar_header] = jaar_data
+                    if self.is_status_present(content_view_list): #lenght content_view_list = 17
+                        print('\033[93m' + 'status in link: ' + href)
+                        print(content_view_list)
+                        status_header = 'status'
+                        status_data = content_view_list[7]
+                        status_data = status_data.replace(' ', '')
+                        status_data = status_data.replace('\n', '')
+                        status_data = status_data.replace('<h4', '')
+                        project_dict[status_header] = status_data
+                        print('status_header: ' + status_header)
+                        print('status_data: ' + status_data)
 
-                    print('jaarheader: ' + jaar_header)
-                    print('jaar_data: ' + jaar_data)
+                        jaar_header = 'jaar'
+                        jaar_data = content_view_list[9]
+                        jaar_data = jaar_data.replace(' ', '')
+                        jaar_data = jaar_data.replace('\n', '')
+                        jaar_data = jaar_data.replace('<h4', '')
+                        project_dict[jaar_header] = jaar_data
 
-                    project_nummer_header = 'projectnummer'
-                    project_nummer_data = content_view_list[11]
-                    project_nummer_data = project_nummer_data.replace(' ', '')
-                    project_nummer_data = project_nummer_data.replace('\n', '')
-                    project_nummer_data = project_nummer_data.replace('<h4', '')
-                    project_dict[project_nummer_header] = project_nummer_data
+                        print('jaarheader: ' + jaar_header)
+                        print('jaar_data: ' + jaar_data)
 
-                    print('project_nummer_header: ' + project_nummer_header)
-                    print('project_nummmer_data: ' + project_nummer_data)
+                        project_nummer_header = 'projectnummer'
+                        project_nummer_data = content_view_list[11]
+                        project_nummer_data = project_nummer_data.replace(' ', '')
+                        project_nummer_data = project_nummer_data.replace('\n', '')
+                        project_nummer_data = project_nummer_data.replace('<h4', '')
+                        project_dict[project_nummer_header] = project_nummer_data
 
-                    aanvrager_header = 'aanvrager'
-                    aanvrager_data = content_view_list[13]
-                    aanvrager_data = aanvrager_data.replace('\t', '')
-                    aanvrager_data = aanvrager_data.replace('\n', '')
-                    aanvrager_data = aanvrager_data.replace('<h4', '')
-                    aanvrager_data = aanvrager_data[4:-10]
-                    project_dict[aanvrager_header] = aanvrager_data
+                        print('project_nummer_header: ' + project_nummer_header)
+                        print('project_nummmer_data: ' + project_nummer_data)
 
-                    print('aanvrager_header: ' + aanvrager_header)
-                    print('aanvrager_data: ' + aanvrager_data)
+                        aanvrager_header = 'aanvrager'
+                        aanvrager_data = content_view_list[13]
+                        aanvrager_data = aanvrager_data.replace('\t', '')
+                        aanvrager_data = aanvrager_data.replace('\n', '')
+                        aanvrager_data = aanvrager_data.replace('<h4', '')
+                        aanvrager_data = aanvrager_data[4:-10]
+                        project_dict[aanvrager_header] = aanvrager_data
 
-                    project_partner_header = 'projectpartner'
-                    project_partner_data = content_view_list[15]
-                    project_partner_data = project_partner_data.replace('\t', '')
-                    project_partner_data = project_partner_data.replace('\n', '')
-                    project_partner_data = project_partner_data.replace('</div', '')
-                    project_partner_data = project_partner_data[4:-4]
-                    project_dict[project_partner_header] = project_partner_data
+                        print('aanvrager_header: ' + aanvrager_header)
+                        print('aanvrager_data: ' + aanvrager_data)
 
-                    print('projectpartner_header: ' + project_partner_header)
-                    print('projectpartner data: ' + project_partner_data)
-                else: #length content_view_list = 15
-                    print('\033[94m' + href)
+                        project_partner_header = 'projectpartner'
+                        project_partner_data = content_view_list[15]
+                        project_partner_data = project_partner_data.replace('\t', '')
+                        project_partner_data = project_partner_data.replace('\n', '')
+                        project_partner_data = project_partner_data.replace('</div', '')
+                        project_partner_data = project_partner_data[4:-4]
+                        project_dict[project_partner_header] = project_partner_data
 
-                    jaar_header = 'jaar'
-                    jaar_data = content_view_list[7]
-                    jaar_data = jaar_data.replace(' ', '')
-                    jaar_data = jaar_data.replace('\n', '')
-                    jaar_data = jaar_data.replace('<h4', '')
-                    project_dict[jaar_header] = jaar_data
-                    print('jaarheader: ' + jaar_header)
-                    print('jaar_data: ' + jaar_data)
+                        print('projectpartner_header: ' + project_partner_header)
+                        print('projectpartner data: ' + project_partner_data)
+                    else: #length content_view_list = 15
+                        print('\033[94m' + href)
 
-                    project_nummer_header = 'projectnummer'
-                    project_nummer_data = content_view_list[9]
-                    project_nummer_data = project_nummer_data.replace(' ', '')
-                    project_nummer_data = project_nummer_data.replace('\n', '')
-                    project_nummer_data = project_nummer_data.replace('<h4', '')
-                    project_dict[project_nummer_header] = project_nummer_data
-                    print('project_nummer_header: ' + project_nummer_header)
-                    print('project_nummmer_data: ' + project_nummer_data)
+                        jaar_header = 'jaar'
+                        jaar_data = content_view_list[7]
+                        jaar_data = jaar_data.replace(' ', '')
+                        jaar_data = jaar_data.replace('\n', '')
+                        jaar_data = jaar_data.replace('<h4', '')
+                        project_dict[jaar_header] = jaar_data
+                        print('jaarheader: ' + jaar_header)
+                        print('jaar_data: ' + jaar_data)
 
-                    aanvrager_header = 'aanvrager'
-                    aanvrager_data = content_view_list[11]
-                    aanvrager_data = aanvrager_data.replace('\t', '')
-                    aanvrager_data = aanvrager_data.replace('\n', '')
-                    aanvrager_data = aanvrager_data.replace('<h4', '')
-                    aanvrager_data = aanvrager_data[4:-10]
-                    project_dict[aanvrager_header] = aanvrager_data
-                    print('aanvrager_header: ' + aanvrager_header)
-                    print('aanvrager_data: ' + aanvrager_data)
+                        project_nummer_header = 'projectnummer'
+                        project_nummer_data = content_view_list[9]
+                        project_nummer_data = project_nummer_data.replace(' ', '')
+                        project_nummer_data = project_nummer_data.replace('\n', '')
+                        project_nummer_data = project_nummer_data.replace('<h4', '')
+                        project_dict[project_nummer_header] = project_nummer_data
+                        print('project_nummer_header: ' + project_nummer_header)
+                        print('project_nummmer_data: ' + project_nummer_data)
 
-                    project_partner_header = 'projectpartner'
-                    project_partner_data = content_view_list[13]
-                    project_partner_data = project_partner_data.replace('\t', '')
-                    project_partner_data = project_partner_data.replace('\n', '')
-                    project_partner_data = project_partner_data.replace('</div', '')
-                    project_partner_data = project_partner_data[4:-4]
-                    project_dict[project_partner_header] = project_partner_data
-                    print('projectpartner_header: ' + project_partner_header)
-                    print('projectpartner data: ' + project_partner_data)
-                self.project_dict_list.append(project_dict)
-                print(project_dict)
+                        aanvrager_header = 'aanvrager'
+                        aanvrager_data = content_view_list[11]
+                        aanvrager_data = aanvrager_data.replace('\t', '')
+                        aanvrager_data = aanvrager_data.replace('\n', '')
+                        aanvrager_data = aanvrager_data.replace('<h4', '')
+                        aanvrager_data = aanvrager_data[4:-10]
+                        project_dict[aanvrager_header] = aanvrager_data
+                        print('aanvrager_header: ' + aanvrager_header)
+                        print('aanvrager_data: ' + aanvrager_data)
+
+                        project_partner_header = 'projectpartner'
+                        project_partner_data = content_view_list[13]
+                        project_partner_data = project_partner_data.replace('\t', '')
+                        project_partner_data = project_partner_data.replace('\n', '')
+                        project_partner_data = project_partner_data.replace('</div', '')
+                        project_partner_data = project_partner_data[4:-4]
+                        project_dict[project_partner_header] = project_partner_data
+
+                        project_dict['status'] = '-'
+
+                        print('projectpartner_header: ' + project_partner_header)
+                        print('projectpartner data: ' + project_partner_data)
+                    self.project_dict_list.append(project_dict)
+                    print(project_dict)
 s = Scraper()
-s.get_href_per_sector()
-print(s.href_dict.keys())
-#s.spider()
-#s.write_to_csv()
+s.spider()
+s.write_to_csv()

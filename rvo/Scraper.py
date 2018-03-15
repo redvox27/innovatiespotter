@@ -218,12 +218,9 @@ class Scraper:
                     print(rijksbijdrage)
                     project_dict = {}
 
-                    project_dict['Location'] = location
-
-                    #TODO main text toevoegen aan dict
-                    #TODO location toevoegen aan dict
-                    #TODO key toevoegen aan dict
-
+                    project_dict['location'] = location
+                    project_dict['rijksbijdrage'] = rijksbijdrage
+                    project_dict['subsidie'] = key
 
                     if self.is_status_present(content_view_list): #lenght content_view_list = 17
                         print('\033[93m' + 'status in link: ' + href)

@@ -8,6 +8,8 @@ class TestHelper:
         return self.sector_dict
 
     def fill_sector_dict(self):
-        self.sector_dict["SDE+"] = "3A27819"
+        #self.sector_dict["Bioraffinage"] = "3A6219"
+
+         self.sector_dict["SDE+"] = "3A27819"
 
 

@@ -8,7 +8,7 @@ from rvo.testHelper import TestHelper
 class Scraper:
 
     def __init__(self):
-        self.helper = TestHelper()
+        self.helper = Helper()
         self.sector_dictionary = self.helper.get_dictionary()
         #in de url_dict zitten alle url's van de resultaten vd sectoren. Dit wordt gebruikt om de aantal pagina's per pagina te bepalen voor de sector
         self.url_dict = {}

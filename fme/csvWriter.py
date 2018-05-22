@@ -2,6 +2,7 @@ import csv
 import threading
 import time
 from fme.infoFinder import Infofinder
+
 class CsvWriter(threading.Thread):
 
     def __init__(self, company_dict_queue):

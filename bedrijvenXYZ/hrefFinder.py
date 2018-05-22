@@ -1,11 +1,13 @@
 import threading
 from bs4 import BeautifulSoup
+from bedrijvenXYZ.booleanObject import BooleanObject
 import requests
 import queue
 
 class HrefFinder(threading.Thread):
 
     queue = queue.Queue()
+    booleanObject = BooleanObject()
 
     def __init__(self):
         threading.Thread.__init__(self)
@@ -53,3 +55,5 @@ class HrefFinder(threading.Thread):
                     location = item.find('p').text
                     company_dict = {'company_name': company_name, 'location': location}
                     self.queue.put(company_dict)
+
+        self.booleanObject.set_boolean()

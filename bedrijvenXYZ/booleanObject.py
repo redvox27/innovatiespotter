@@ -5,3 +5,6 @@ class BooleanObject:
 
     def set_boolean(self):
         self.running = False
+
+    def get_boolean(self):
+        return self.running

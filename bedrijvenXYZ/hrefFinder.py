@@ -53,4 +53,3 @@ class HrefFinder(threading.Thread):
                     location = item.find('p').text
                     company_dict = {'company_name': company_name, 'location': location}
                     self.queue.put(company_dict)
-                    #commit

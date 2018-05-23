@@ -46,7 +46,7 @@ class HrefFinder(threading.Thread):
     def run(self):
         url_list = self.fill_url_list()
 
-        for url in url_list[:1]:
+        for url in url_list:
             soup = self.get_soup(url)
             item_list = soup.findAll('div', {'class': 'item'})
             if item_list:
@@ -55,5 +55,4 @@ class HrefFinder(threading.Thread):
                     location = item.find('p').text
                     company_dict = {'company_name': company_name, 'location': location}
                     self.queue.put(company_dict)
-
         self.booleanObject.set_boolean()

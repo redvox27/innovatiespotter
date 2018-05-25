@@ -36,7 +36,9 @@ class HrefFinder():
             url = 'http://www.hightechnl.nl'
             if '/vereniging' in href and 'Member' in href:
                 url += href
+                print(url)
                 self.url_list.append(url)
 
     def get_url_list(self):
         return self.url_list
+

@@ -16,7 +16,7 @@ class HrefFinder():
             "User-Agent":
                 "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
         }
-        self.url_list = []
+        self.url_list = set()
         self.fill_url_list()
 
     def fill_url_list(self):
@@ -36,8 +36,7 @@ class HrefFinder():
             url = 'http://www.hightechnl.nl'
             if '/vereniging' in href and 'Member' in href:
                 url += href
-                print(url)
-                self.url_list.append(url)
+                self.url_list.add(url)
 
     def get_url_list(self):
         return self.url_list

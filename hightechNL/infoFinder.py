@@ -15,15 +15,14 @@ class InfoFinder:
         self.info_dict = {}
 
     def is_postal_code(self, string):
-        postal_code = re.search(r'\d{4}? [A-Z]{2}? [A-Z]{1}', string)
+        postal_code = re.search(r'\d{4}? [A-Z]{2}? [A-Z]{1}[a-z]+', string)
+        #TODO uitzondering schrijven voor 's-Hertogenbosch
+
         if postal_code:
-            #return postal_code.group()
-            return string
+            return postal_code.group()
+            #return string
         else:
             return None
-
-
-
 
     def is_street_name(self, string):
         if string[0].isupper() and string[len(string)-1].isdigit() or string[len(string)-2].isdigit():
@@ -34,6 +33,17 @@ class InfoFinder:
         else:
             return False
 
+    def find_website(self, soup):
+        paragraph_list = soup.findAll('p')
+        website = '-'
+        for p in paragraph_list:
+            ankor_list = p.findAll('a')
+            if ankor_list:
+                for ankor in ankor_list:
+                    href = ankor.text
+                    if href[:3] == 'www':
+                        website = href
+        return website
     def fill_info_dict(self):
         for url in self.url_list:
             req = requests.get(url, self.headers)
@@ -43,20 +53,21 @@ class InfoFinder:
             company_name = soup.find('h1').text
             postal_code = '-'
             street = '-'
+            website = self.find_website(soup)
 
-            paragraph_list = soup.findAll('p')
-            for p in paragraph_list:
-                text = p.text
-                if text:
-                    if self.is_postal_code(text):
-                        postal_code = self.is_postal_code(text)
-                    if self.is_street_name(text):
-                        street = text
-
-            print(company_name)
-            print(postal_code)
-            print(street)
-            print('\n')
+            #     text = p.text
+            #     text.replace('\n', '')
+            #     print(text)
+            #     if text:
+            #         if self.is_postal_code(text):
+            #             postal_code = self.is_postal_code(text)
+            #         if self.is_street_name(text):
+            #             street = text
+            #
+            # print(company_name)
+            # print(postal_code)
+            # print(street)
+            # print('\n')
 
 info_finder = InfoFinder()
 info_finder.fill_info_dict()

@@ -210,7 +210,7 @@ class Scraper:
                     content_view_string = self.content_view_to_string(content_view)
 
                     main_page_text = soup.find('div', {'class': 'content'}).text
-                    #print(main_page_text)
+                    print(main_page_text)
                     print('\n')
 
                     rijksbijdrage = self.get_rijksbijdrage(content_view)

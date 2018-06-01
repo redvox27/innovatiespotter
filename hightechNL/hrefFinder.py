@@ -20,7 +20,7 @@ class HrefFinder():
         self.fill_url_list()
 
     def fill_url_list(self):
-        driver = webdriver.Chrome(executable_path='C:/Users/vincent/chromedriver/chromedriver.exe')
+        driver = webdriver.Chrome(executable_path='C:/Users/Gebruiker/chromedriver/chromedriver.exe')
         driver.implicitly_wait(30)
         driver.get(self.url)
 

@@ -20,8 +20,11 @@ class HrefFinder:
         python_button.click()
 
         soup = BeautifulSoup(driver.page_source)
-
-        print(soup.findAll('a'))
-
-finder = HrefFinder()
-finder.get_href_list()
+        href_list = []
+        for ankor in soup.findAll('a'):
+            href = ankor.get('href')
+            if href:
+                if '/lidbedrijf/' in href:
+                    print(href)
+                    href_list.append(href)
+        return href_list

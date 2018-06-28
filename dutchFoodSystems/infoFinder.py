@@ -27,6 +27,9 @@ class InfoFinder:
         ankor_list = soup.findAll('a')
         return(ankor_list[2].get('href'))
 
+    def import_to_csv(self, company, adres, postcode, website):
+        pass
+        #todo write to csv copy pasta
     def find_info(self):
         for url in self.href_list:
             req = requests.get(url, self.headers)

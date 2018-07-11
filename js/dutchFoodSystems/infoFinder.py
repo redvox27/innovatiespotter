@@ -2,7 +2,8 @@ import csv
 
 import requests
 from bs4 import BeautifulSoup
-from dutchFoodSystems.hrefFinder import HrefFinder
+
+from js.dutchFoodSystems.hrefFinder import HrefFinder
 
 class InfoFinder:
 
@@ -43,7 +44,6 @@ class InfoFinder:
                 writer.writerow(company_dict)
             except Exception as e:
                 print(e)
-        #todo write to csv copy pasta
     def find_info(self):
         for url in self.href_list:
             req = requests.get(url, self.headers)

@@ -1,7 +1,10 @@
+import csv
+
 import requests
 from bs4 import BeautifulSoup
-from teqnow.hrefFinder import HrefFinder
-import csv
+
+from js.teqnow.hrefFinder import HrefFinder
+
 
 class InfoFinder:
 

@@ -1,3 +1,5 @@
+import csv
+
 import requests
 from bs4 import BeautifulSoup
 from dutchFoodSystems.hrefFinder import HrefFinder
@@ -28,14 +30,25 @@ class InfoFinder:
         return(ankor_list[2].get('href'))
 
     def import_to_csv(self, company, adres, postcode, website):
-        pass
+        company_dict = {}
+        company_dict['company'] = company
+        company_dict['adres'] = adres
+        company_dict['postcode'] = postcode
+        company_dict['website'] = website
+
+        with open('dutchFoodSystems.csv', 'a') as file:
+            try:
+                headings = company_dict.keys()
+                writer = csv.DictWriter(file, headings)
+                writer.writerow(company_dict)
+            except Exception as e:
+                print(e)
         #todo write to csv copy pasta
     def find_info(self):
         for url in self.href_list:
             req = requests.get(url, self.headers)
             plain_text = req.text
             soup = BeautifulSoup(plain_text)
-
             content_right = soup.find('div', {'id': 'contentright'})
 
             company_text = soup.find('div', {'class': 'blue'}).text
@@ -47,7 +60,7 @@ class InfoFinder:
                 adres = text_list[0]
                 postcode = text_list[1]
                 website = self.get_website(content_right)
-
+                self.import_to_csv(company_name, adres, postcode, website)
                 print('adres: {}'.format(adres))
                 print('postcode: {}'.format(postcode))
                 print('website: {}'.format(website))

@@ -5,12 +5,10 @@ class CsvImporter:
     def __init__(self, filename):
         self.filename = filename + '.csv'
 
-    def import_to_csv(self, company, adres, postcode, website):
+    def import_to_csv(self, company, postcode):
         company_dict = {}
         company_dict['company'] = company
-        company_dict['adres'] = adres
         company_dict['postcode'] = postcode
-        company_dict['website'] = website
 
         with open(self.filename, 'a') as file:
             try:

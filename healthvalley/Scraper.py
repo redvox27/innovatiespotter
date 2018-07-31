@@ -122,7 +122,7 @@ class Scraper():
     def write_to_csv(self):
         company_list = self.company_list
         print(company_list)
-        with open('healthvalley2.csv', 'w') as file:
+        with open('healthvalley3.csv', 'w') as file:
             try:
                 headings = (self.company_list[0].keys())
                 writer = csv.DictWriter(file, headings, dialect='excel')

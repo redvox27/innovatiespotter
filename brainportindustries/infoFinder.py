@@ -23,8 +23,6 @@ class InfoFinder:
                 self.importer.import_to_csv(company, postcode)
                 print(postcode)
                 print(company)
-
-
             except Exception as e:
                 print('exception occured at url: {} error: {}'.format(url, e))
 finder = InfoFinder()

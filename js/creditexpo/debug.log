@@ -1,0 +1,2 @@
+[0814/122535.244:ERROR:process_reader_win.cc(123)] NtOpenThread: {Toegang geweigerd} Een proces heeft toegang tot een object aangevraagd, maar heeft deze toegangsrechten niet gekregen. (0xc0000022)
+[0814/122535.266:ERROR:exception_snapshot_win.cc(88)] thread ID 10500 not found in process

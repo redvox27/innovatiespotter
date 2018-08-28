@@ -1,0 +1,162 @@
+1533645221812	geckodriver	INFO	geckodriver 0.21.0
+1533645221821	geckodriver	INFO	Listening on 127.0.0.1:49747
+1533645224857	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.t8JlAL4N7Wa2"
+1533645225360	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533645225361	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533645226896	Marionette	INFO	Listening on port 49759
+1533645226970	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+[Parent 21448, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15316, Chrom[Child 17208, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17208, Chrome_ChildThread][Parent 21448, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22896, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22896, Chrome_ChildThread] *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 13228, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533645258017	geckodriver	INFO	geckodriver 0.21.0
+1533645258023	geckodriver	INFO	Listening on 127.0.0.1:49855
+1533645261034	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.xI6h9pUrFKBG"
+1533645261613	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533645261614	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533645263109	Marionette	INFO	Listening on port 49867
+1533645263193	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+[Parent 8728, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 8728, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17840, Ch[Child 13904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13904, Chrome_[Parent 8728, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12384, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12384, Chrome_ChildThread] WARNING: pipe*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 21480, Chrome_ChildThread
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533645305470	Marionette	INFO	Listening on port 49981
+1533645305611	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+[Parent 11348, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 11348, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, lin[Child 219e 3424, Chrome_ChildThread] WARNING: pipe error: 109: f6
+ile z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21924, Chrome_Child[Parent 11348, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1804, Chrome_Ch*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 8060, Chrome_
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533645475167	geckodriver	INFO	geckodriver 0.21.0
+1533645475174	geckodriver	INFO	Listening on 127.0.0.1:50303
+1533645478184	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.mdcTSJlHPPBA"
+1533645478732	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533645478733	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533645480477	Marionette	INFO	Listening on port 50315
+1533645481150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+[Child 17376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17376, Chrome_ChildTh[Child 9108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9108, Chrome[Parent 7960, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 11968, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533647237074	geckodriver	INFO	geckodriver 0.21.0
+1533647237080	geckodriver	INFO	Listening on 127.0.0.1:53625
+1533647240080	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.jtExRfBtOYw2"
+1533647240493	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533647240493	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533647241961	Marionette	INFO	Listening on port 53637
+1533647242379	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+JavaScript warning: https://floorplan.expodoc.com/nl/231/vision-robotics-motion-2018, line 1400: unreachable code after return statement
+[Parent 16324, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 16324, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22536, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22536, Chr[Child 21156, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21156, Chrome_Ch[Parent 16324, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 22412, Chrome_ChildThr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

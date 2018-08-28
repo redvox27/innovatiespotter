@@ -1,0 +1,585 @@
+1533578893963	geckodriver	INFO	geckodriver 0.21.0
+1533578893971	geckodriver	INFO	Listening on 127.0.0.1:59114
+1533578897029	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.wXUJCMDyxYz4"
+1533578899515	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533578899537	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533578903591	Marionette	INFO	Listening on port 59126
+1533578903759	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: GFX: AL_D3D11 abandoned sync
+[GFX1-]: GFX: D3D11 detected a device reset in Present
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[Parent 23372, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 23372, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19592, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19592, Chrome[Child 7556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7556, Chrome_ChildThread] WARNING:[Parent 23372, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14924, Chrome_C[GPU 2896, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ce reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: GFX: D3D11 skip BeginFrame with device-removed.
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[GFX1-]: (gfxWindowsPlatform) Detected device reset: 3
+[GFX1-]: (gfxWindowsPlatform) scheduled device update.
+[GFX1-]: LayerManager::EndTransaction skip RenderLayer().
+[Parent 18420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4672, Chrome_C[Child 10192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10192, Chrome_Chil[Parent 18420, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20580, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20580, Chrom[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+y from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533579370786	Marionette	INFO	Listening on port 60010
+1533579371299	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 12684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14996, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13556, Chr[ome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12684, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18912, Chrome_C*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 18832,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533579438770	geckodriver	INFO	geckodriver 0.21.0
+1533579438779	geckodriver	INFO	Listening on 127.0.0.1:60160
+1533579441790	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.eGlAqR3xlDgA"
+1533579442207	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533579442208	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+[GFX1-]: Recovered from crash while creating a D3D11 content device
+[GFX1-]: Recovered from crash while creating a D3D11 content device
+[GFX1]: [D3D11] Faile[GFXd to create t1]: [D3D11] Faihe D3D11 device in content                            procledess.
+ to create the D3D11 device in content                            process.
+[GFX1-]: GFX: AL_D3D11 abandoned sync
+[GFX1-]: GFX: D3D11 detected a device reset in Present
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533579447757	Marionette	INFO	Listening on port 60172
+1533579447871	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 14060, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19820, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/i[pc_Parenchannel_win.cc,t 1406 line 30, Gecko_IOThre46
+ad] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20952, Chrome_Chi[Parent 14060, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7520, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7520, Chrome_ChildThread] WAR*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 23416, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533579831212	geckodriver	INFO	geckodriver 0.21.0
+1533579831219	geckodriver	INFO	Listening on 127.0.0.1:60773
+1533579834232	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.HfminjcngFi4"
+1533579834743	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533579834744	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533579836065	Marionette	INFO	Listening on port 60785
+1533579836424	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 15792, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15792, Chrome[Parent 14316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 84, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 84, Chrome_Chi[GPU
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533579915096	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533579916507	Marionette	INFO	Listening on port 60956
+1533579916768	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 19668, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 19668, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11728, Chrome[Child 8244, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8244, Chrome_ChildT[Child 13876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13876, Chrome_C*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533580070947	geckodriver	INFO	geckodriver 0.21.0
+1533580070956	geckodriver	INFO	Listening on 127.0.0.1:61240
+1533580073952	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.II8CWedOSrV5"
+1533580074395	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533580074396	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533580076056	Marionette	INFO	Listening on port 61252
+1533580076064	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11816, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel[Chi_wild 18348, Chrome_Chn.cc, lineild 346
+Thread] WARNING: pi[pe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18348, Ch[Parent 11816, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17596, Chrome[GPU
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533636441991	geckodriver	INFO	geckodriver 0.21.0
+1533636441998	geckodriver	INFO	Listening on 127.0.0.1:52104
+1533636445052	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.YKysNWdoNmuw"
+1533636447498	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533636447499	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533636451522	Marionette	INFO	Listening on port 52116
+1533636451716	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 18072, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common[Child 18180, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18180, Chrome_ChildThread] WAR/ipc_channel_win.cc, line 346
+[Parent 11100, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21548, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21548, Chro[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Install.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533636735982	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533636737433	Marionette	INFO	Listening on port 52620
+1533636737683	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 17832, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 17832, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10632[Child 23440, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 23, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10632, Chro[Child 22832, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22832, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+m:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533636869602	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533636871041	Marionette	INFO	Listening on port 52877
+1533636871231	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 18376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8172, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8172, Chrome_ChildTh[Child 16948, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16948, Chrome_ChildThread] WA[Parent 18376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 20628, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+der.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533637137629	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533637139198	Marionette	INFO	Listening on port 53310
+1533637139292	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 18704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6888, Chrome_Ch[Parent 10032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8348, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8348, Chrome_ChildTh[GPU 7448, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+tup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533637170372	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533637171828	Marionette	INFO	Listening on port 53409
+1533637172159	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 13712, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13712, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17332, Chrome_ChildThre[Parent 13712, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11804, Chrome_ChildThread] WARNING: pipe error: 109: f[GPU 9316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+observe@addonManager.js:66:9
+1533637770159	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533637771628	Marionette	INFO	Listening on port 54402
+1533637771869	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 14604, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 14604, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/buil[Parent 14604, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15132, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15132, Chrome_ChildThread] WARNING[GPU 2448, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533637863841	Marionette	INFO	Listening on port 54589
+1533637864660	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11544, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 11544, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6384, Chrome_ChildThread] WARNING: pipe error: 1[Child 16856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16856, Chrom09: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child [GPU 21728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641135850	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641137372	Marionette	INFO	Listening on port 59370
+1533641137513	Marionette	WARN	TLS certificate errors will be ignored for this session
+[[Parent 15268, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14820, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14820, Chrome_ChildThread] WARNING[Parent 15268, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 8940, Chrome_ChildTh
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+m:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641170334	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641171795	Marionette	INFO	Listening on port 59479
+1533641172015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.maritiemland.nl/wp-includes/js/wp-emoji-release.min.js, line 4: NS_ERROR_UNEXPECTED: 
+[Child 21268, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21268, Chr[Child 14076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x550027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 14076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 18104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15088, Chrome_ChildThread] WARNIN*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 7592, Chrome_
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1533641196726	geckodriver	INFO	geckodriver 0.21.0
+1533641196732	geckodriver	INFO	Listening on 127.0.0.1:59559
+1533641199750	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GEBRUI~1\\AppData\\Local\\Temp\\rust_mozprofile.5LYtHzU7t2cT"
+1533641200188	addons.xpi-utils	WARN	addMetadata: Add-on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} is invalid: Error: Install manifest specifies unknown optionsType: 2 (resource://gre/modules/addons/XPIInstall.jsm:744:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:744:13
+loadFromRDF@XPIInstall.jsm:893:23
+awaitPromise@XPIProvider.jsm:240:3
+syncLoadManifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641200188	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641201639	Marionette	INFO	Listening on port 59572
+1533641201960	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 6428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6936, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6936, Chro[Parent 6428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7304, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7304, Chrome_ChildThread] W[Parent 6428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16812, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16812, Chrom[GPU 3668, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+2885:5
+observe@addonManager.js:66:9
+1533641301979	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641303684	Marionette	INFO	Listening on port 59771
+1533641304201	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 3348, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16920, Chrome_ChildTh[Parent 3348, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3220, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3220, Chr[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+nifestFromFile@XPIInstall.jsm:981:10
+addMetadata@XPIDatabase.jsm:2490:21
+processFileChanges@XPIDatabase.jsm:2833:23
+checkForChanges@XPIProvider.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641529531	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641531096	Marionette	INFO	Listening on port 60172
+1533641531193	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 18000, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15664, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15664, Chrom[Parent 18000, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18000, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12864, Chrome[GPU 18
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+.jsm:2139:34
+startup@XPIProvider.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641565272	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641566729	Marionette	INFO	Listening on port 60277
+1533641566967	Marionette	WARN	TLS certificate errors will be ignored for this session
+[[CParenhild 672, Chrome_ChildThread] WARNItNG: pip e error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_w16852, Geicko_IOThread] WARNINGn.cc, line 346: pipe erro
+r: 109: file z:/build/build/src/[Child ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15448, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15448, Chrome_ChildThread[Parent 16852, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6664, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6664, Chrome_C[GPU 21564, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+der.jsm:1591:25
+callProvider@AddonManager.jsm:207:12
+_startProvider@AddonManager.jsm:655:5
+startup@AddonManager.jsm:819:9
+startup@AddonManager.jsm:2885:5
+observe@addonManager.js:66:9
+1533641641946	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Gebruiker\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2189: TypeError: addon is null
+1533641643343	Marionette	INFO	Listening on port 60441
+1533641643914	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 16464, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9760, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9760, Ch[Parent 16464, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 16464, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21128, Chrome_ChildThread] W[GPU 16996
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

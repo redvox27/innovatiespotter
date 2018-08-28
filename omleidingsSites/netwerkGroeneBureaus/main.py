@@ -8,5 +8,5 @@ from omleidingsSites.infoFinderController import InfoFinder
 
 href_finder = GroeneBureauHrefFinder()
 url_list = href_finder.get_url_list()
-info_finder = InfoFinder(url_list)
+info_finder = InfoFinder(url_list, 'netwerkgroenebureaus')
 info_finder.find_info()

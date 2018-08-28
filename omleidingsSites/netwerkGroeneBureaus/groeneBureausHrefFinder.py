@@ -1,6 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
-from headers import HEADERS
 from omleidingsSites.hrefFinderController import HrefFinder
 
 class GroeneBureauHrefFinder(HrefFinder):
@@ -19,6 +16,8 @@ class GroeneBureauHrefFinder(HrefFinder):
                     url = ankor.get('href')
                     company = ankor.text
                     if url:
+                        if url[len(url)-1] == '/':
+                            url = url[:-1]
                         url_list.append((company, url))
             return url_list
         except Exception as e:
